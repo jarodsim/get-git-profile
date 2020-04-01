@@ -19,6 +19,7 @@ function buscar() {
 
 function renderResponse(response) {
     let tr = document.getElementById('response')
+    tr.innerHTML = ''
 
     let id = document.createElement('td')
     let user = document.createElement('td')
@@ -81,6 +82,7 @@ function userRepos() {
 
 function renderlistRepos(response) {
     let reposList = document.getElementById('reposlist')
+    reposList.innerHTML = ''
 
     for (repos of response) {
         let li = document.createElement('li')
