@@ -4,8 +4,6 @@ function buscar() {
     if (usuario.length != 0) {
         axios.get('https://api.github.com/users/' + usuario)
             .then(function (response) {
-                //console.table(response.data)
-                //Função para renderizar dados no html
                 renderResponse(response)
                 userRepos()
             })
